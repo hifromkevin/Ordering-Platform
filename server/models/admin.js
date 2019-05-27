@@ -1,0 +1,1 @@
+// Where admin inputs, such as page titles will be stored

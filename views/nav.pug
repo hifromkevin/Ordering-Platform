@@ -1,0 +1,33 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+	.container
+		a.navbar-brand(href='/') AEI Consultants
+		button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+			span.navbar-toggler-icon
+		#navbarNav.collapse.navbar-collapse
+			ul.navbar-nav.mr-auto
+				li.nav-item
+					a.nav-link(href='/') New Order
+				li.nav-item
+					a.nav-link(href='/') View Orders
+				li.nav-item
+					a.nav-link(href='/') View Users 
+					//- WebAdmin - View ALL Users
+					//- CompanyAdmin - View all in company
+					//- User - Does not see this menu item
+				li.nav-item
+					a.nav-link(href='/') Companies
+					//- WebAdmin Only
+						//- CRUD companies
+						//- CRUD services provided to each company
+				li.nav-item
+					a.nav-link(href='/') Email Templates
+					//- WebAdmin Only
+				ul.navbar-nav.ml-auto
+					//- Will add conditionals here
+					li.nav-item
+						a.nav-link(href='/users/logout') Logout
+					li.nav-item
+						a.nav-link(href='/users/register') Register
+					li.nav-item
+						a.nav-link(href='/users/login') Login
+			
